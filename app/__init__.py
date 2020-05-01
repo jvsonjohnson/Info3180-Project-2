@@ -12,7 +12,7 @@ app.config["SECRET_KEY"] = "secretkey"
 if ENV == 'dev':
     app.debug = True
     app.config[
-        "SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:project1@localhost/project1"
+        "SQLALCHEMY_DATABASE_URI"] = ""
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = True
 else:
     app.debug = False
